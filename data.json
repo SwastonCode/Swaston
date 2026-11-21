@@ -1,0 +1,23 @@
+{
+  "badge": "GITHUB PAGES",
+  "title": "Мой хаб и проекты",
+  "subtitle": "Тут собраны мои штуки, скрипты, боты и заметки. Контент обновляется через data.json.",
+  "links": [
+    { "label": "GitHub", "url": "https://github.com" },
+    { "label": "Telegram", "url": "https://t.me" }
+  ],
+  "cards": [
+    {
+      "title": "Coarena Chat Bot",
+      "description": "Бот на Python для Termux с переключением моделей и управлением чатом.",
+      "linkText": "Открыть →",
+      "url": "https://github.com"
+    },
+    {
+      "title": "Новая карточка",
+      "description": "Отредактируй этот блок в data.json, чтобы добавить свой проект или пост.",
+      "linkText": "Подробнее →",
+      "url": "#"
+    }
+  ]
+}
