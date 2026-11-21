@@ -1,0 +1,143 @@
+:root {
+  --bg: #09070f;
+  --glass: rgba(139, 92, 246, 0.11);
+  --glass-hover: rgba(168, 85, 247, 0.19);
+  --border: rgba(192, 132, 252, 0.24);
+  --text: #f5efff;
+  --muted: #c4b5fd;
+  --accent: #a855f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.bg-glow {
+  position: fixed;
+  inset: -20% -10%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.24), transparent 45%),
+    radial-gradient(circle at 80% 75%, rgba(88, 28, 135, 0.32), transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 18px 72px;
+}
+
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.hero {
+  padding: 28px;
+  margin-bottom: 28px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(168, 85, 247, 0.22);
+  border: 1px solid var(--border);
+  color: #e9d5ff;
+}
+
+h1 {
+  margin: 14px 0 8px;
+  font-size: clamp(28px, 6vw, 42px);
+  line-height: 1.15;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+  background: rgba(168, 85, 247, 0.22);
+  border: 1px solid var(--border);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--glass-hover);
+  transform: translateY(-2px);
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 0 0 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.card:hover {
+  background: var(--glass-hover);
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.card-link {
+  color: #d8b4fe;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  }
